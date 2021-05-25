@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <OutputType>Library</OutputType>
+    <PackageId>Oonyoen.Orleans.Chat.Silo</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>oonyoen</Authors>
+    <Company>oonyoen-org</Company>
+    <PackageDescription>Orleans silo for chat functionality.</PackageDescription>
+    <RepositoryUrl>https://github.com/oonyoen-org/Oonyoen.Orleans.Chat</RepositoryUrl>
+    <RestoreAdditionalProjectSources>
+      https://api.nuget.org/v3/index.json;
+      https://nuget.pkg.github.com/oonyoen-org/index.json;
+    </RestoreAdditionalProjectSources>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Orleans.Server" Version="3.4.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Oonyoen.Orleans.Chat\Oonyoen.Orleans.Chat.csproj" />
+  </ItemGroup>
+
+</Project>
